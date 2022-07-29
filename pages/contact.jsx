@@ -1,11 +1,12 @@
 import BackgroundWrapper from "../components/BackgroundWrapper";
 import ContactContent from "../components/ContactContent";
+import bg4 from "../public/background-final-4.png";
 
 export default function About() {
   return (
     <>
       (
-      <BackgroundWrapper>
+      <BackgroundWrapper bg={bg4.src}>
         <ContactContent />
       </BackgroundWrapper>
       )

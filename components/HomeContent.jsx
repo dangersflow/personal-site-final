@@ -49,20 +49,23 @@ const StyledHeader = styled(motion.div)`
 }`;
 
 const StyledBodyRight = styled(motion.div)`
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: "RNSLight", sans-serif;
     color: white;
-    margin-left: 50%;
-    padding: 4rem
+    margin-left: 0rem;
+    padding: 0rem
+    padding-bottom: 3rem;
 
-    @media (max-width: 767px) {
+    @media (min-width: 767px) {
       padding: 0rem;
       padding-bottom: 3rem;
       font-size: 1rem;
-      margin-right: 0rem;
+      margin-left: 0rem;
     }
     @media (min-width: 768px) {
-      padding: 1.5rem;
+      padding: 4rem;
+      padding-bottom: 0rem;
+      margin-left: 50%;
       font-size: 1.5rem;
     }
     @media (min-width: 1024px) {

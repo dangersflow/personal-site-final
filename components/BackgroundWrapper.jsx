@@ -12,6 +12,26 @@ const StyledBackgroundWrapper = styled.div`
   min-height: 100vh;
 
   margin-left: 30rem;
+
+  @media (max-width: 767px) {
+    margin-left: 0rem;
+  }
+  @media (min-width: 768px) {
+    margin-left: 0rem;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 20rem;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 20rem;
+  }
+  @media (min-width: 1600px) {
+    margin-left: 30rem;
+  }
+  @media (min-width: 1920px) {
+  }
+  @media (min-width: 2560px) {
+  }
 `;
 
 export default function BackgroundWrapper(props) {

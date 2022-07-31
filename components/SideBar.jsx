@@ -20,17 +20,25 @@ const StyledSideBar = styled(Col)`
   border-right: 2px solid #000000;
   position: fixed;
 
-  media (min-width: 768px) {
+  @media (max-width: 767px) {
+    display: none;
   }
-  media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    display: none;
   }
-  media (min-width: 1280px) {
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 20rem;
   }
-  media (min-width: 1600px) {
+  @media (min-width: 1280px) {
+    width: 20rem;
   }
-  media (min-width: 1920px) {
+  @media (min-width: 1600px) {
+    width: 30rem;
   }
-  media (min-width: 2560px) {
+  @media (min-width: 1920px) {
+  }
+  @media (min-width: 2560px) {
   }
 `;
 

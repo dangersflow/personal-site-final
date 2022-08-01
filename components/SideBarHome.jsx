@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "@emotion/styled";
+import { useMediaQuery } from "react-responsive";
 const { motion, AnimatePresence } = require("framer-motion");
 
 const LinkWrapper = styled(motion.a)``;
@@ -88,24 +89,17 @@ const StyledCharacter = styled(motion.span)`
   align-items: center;
   justify-content: center;
   font-family: "Asher", sans-serif;
-
-  media (min-width: 768px) {
-  }
-  media (min-width: 1024px) {
-  }
-  media (min-width: 1280px) {
-  }
-  media (min-width: 1600px) {
-  }
-  media (min-width: 1920px) {
-  }
-  media (min-width: 2560px) {
-  }
 `;
 
 export default function SideBarHome(props) {
   const [isHovering, setIsHovering] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const handleHoverEnter = () => {
     setIsHovering(true);

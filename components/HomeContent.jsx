@@ -30,12 +30,13 @@ const StyledHeader = styled(motion.div)`
     padding-bottom: 5rem;
     font-family: "RNSReg", sans-serif;
     color: white;
+    text-align: center;
 
     @media (max-width: 767px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     @media (min-width: 768px) {
-      font-size: 2.5rem;  
+      font-size: 3rem;  
     }
     @media (min-width: 1024px) {
       font-size: 3rem;
@@ -49,11 +50,10 @@ const StyledHeader = styled(motion.div)`
 }`;
 
 const StyledBodyRight = styled(motion.div)`
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "RNSLight", sans-serif;
     color: white;
     margin-left: 0rem;
-    padding: 0rem
     padding-bottom: 3rem;
 
     @media (min-width: 767px) {
@@ -91,7 +91,7 @@ const StyledBodyLeft = styled(motion.div)`
     @media (max-width: 767px) {
       padding: 0rem;
       padding-bottom: 3rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-right: 0rem;
     }
     @media (min-width: 768px) {

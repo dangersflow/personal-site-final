@@ -9,6 +9,7 @@ import useSetSessionStorage from "../components/SetSessionStorage";
 
 function MyApp({ Component, pageProps }) {
   const [temp, setTemp] = useState(true);
+
   const showIntro = useSessionStorage("showIntro");
 
   useEffect(() => {

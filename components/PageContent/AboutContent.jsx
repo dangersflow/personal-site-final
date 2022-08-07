@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
+
 import {
   StyledHeader,
   StyledBodyLeft,
   StyledBodyRight,
   StyledContentColumn,
-} from "./MainStyledComponents";
+  StyledBodyCenter,
+} from "../MainStyledComponents";
 
 export default function AboutContent() {
   return (

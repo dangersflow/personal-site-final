@@ -1,5 +1,5 @@
 import BackgroundWrapper from "../components/BackgroundWrapper";
-import ContactContent from "../components/ContactContent";
+import ContactContent from "../components/PageContent/ContactContent";
 import bg4 from "../public/background-final-4.png";
 
 export default function About() {

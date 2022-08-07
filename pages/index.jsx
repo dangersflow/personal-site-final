@@ -1,4 +1,4 @@
-import HomeContent from "../components/HomeContent";
+import HomeContent from "../components/PageContent/HomeContent";
 import BackgroundWrapper from "../components/BackgroundWrapper";
 import bg from "../public/background-final.png";
 

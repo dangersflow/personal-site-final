@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import react, { useEffect, useState, useLayoutEffect } from "react";
 import Col from "../components/Col";
 import IntroSequence from "../components/IntroSequence";
-import SideBar from "../components/SideBar";
+import SideBar from "../components/SideBarContent/SideBar";
 import { useShowIntro } from "../components/Store";
 import useSessionStorage from "../components/UseSessionStorage";
 import useSetSessionStorage from "../components/SetSessionStorage";

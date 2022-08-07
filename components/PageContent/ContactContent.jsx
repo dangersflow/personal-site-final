@@ -6,16 +6,17 @@ import {
   StyledBodyLeft,
   StyledBodyRight,
   StyledContentColumn,
-} from "./MainStyledComponents";
+  StyledBodyCenter,
+} from "../MainStyledComponents";
 
-export default function ProjectsContent() {
+export default function ContactContent() {
   return (
     <StyledContentColumn>
       <StyledHeader
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        PROJECTS
+        CONTACT
       </StyledHeader>
       <StyledBodyLeft
         initial={{ y: "4rem", opacity: 0 }}

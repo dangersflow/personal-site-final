@@ -1,20 +1,22 @@
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
+
 import {
   StyledHeader,
   StyledBodyLeft,
   StyledBodyRight,
   StyledContentColumn,
-} from "./MainStyledComponents";
+  StyledBodyCenter,
+} from "../MainStyledComponents";
 
-export default function ContactContent() {
+export default function ProjectsContent() {
   return (
     <StyledContentColumn>
       <StyledHeader
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        CONTACT
+        PROJECTS
       </StyledHeader>
       <StyledBodyLeft
         initial={{ y: "4rem", opacity: 0 }}

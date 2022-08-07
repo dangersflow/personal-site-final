@@ -104,3 +104,36 @@ export const StyledBodyLeft = styled(motion.div)`
     @media (min-width: 2560px) {
     }
 }`;
+
+export const StyledBodyCenter = styled(motion.div)`
+    font-size: 2rem;
+    font-family: "RNSLight", sans-serif;
+    color: white;
+    padding: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
+    background-color: rgba(76, 67, 70, .25);  
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border-left: 3px solid yellow;
+    border-right: 3px solid yellow;
+
+    @media (max-width: 767px) {
+      padding: 4rem;
+      padding-bottom: 3rem;
+      font-size: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1600px) {
+      font-size: 2rem;
+    }
+    @media (min-width: 1920px) {
+    }
+    @media (min-width: 2560px) {
+    }
+}`;

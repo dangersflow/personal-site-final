@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
 import Image from "next/image";
+import { useState } from "react";
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiJavascript, SiCss3, SiHtml5 } from "react-icons/si";
 
 import {
   StyledHeader,
@@ -10,17 +14,9 @@ import {
   StyledBodyCenter,
 } from "../MainStyledComponents";
 
-const StyledImageWrapper = styled(motion.div)`
-  position: absolute;
-  top: -20px;
-  left: -20px;
-`;
-
-const StyledBodyLineLeft = styled(Image)`
-  position: relative;
-`;
-
 export default function HomeContent() {
+  const [noDelay, setNoDelay] = useState(false);
+
   return (
     <StyledContentColumn>
       <StyledHeader
@@ -29,72 +25,62 @@ export default function HomeContent() {
       >
         FRANCISCO GONZALEZ
       </StyledHeader>
+      <StyledBodyLeft
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: noDelay ? 0 : 0.5,
+        }}
+      >
+        {`👋 Hello. My name is Frank! \n`}
+      </StyledBodyLeft>
+      <StyledBodyCenter
+        initial={{ y: "4rem", opacity: 0, animationDelay: "0.5s" }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: noDelay ? 0 : 1.5,
+        }}
+      >
+        {`🕸️ I'm a software engineer and a web developer. 🕸️  \n`}
+      </StyledBodyCenter>
+      <StyledBodyRight
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: noDelay ? 0 : 2.5,
+        }}
+      >{`Thanks for stopping by! \n`}</StyledBodyRight>
       <StyledBodyCenter
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: noDelay ? 0 : 3.5,
+        }}
+        onAnimationComplete={() => {
+          setNoDelay(true);
+        }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
+        {`🔥My Tech Stack🔥  \n`}
       </StyledBodyCenter>
-      <StyledBodyLeft
+      <StyledBodyCenter
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: noDelay ? 0 : 4.5,
+        }}
+        style={{
+          display: "flex",
+          width: "100%",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyRight
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyRight>
-      <StyledBodyLeft
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyLeft
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyRight
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyRight>
+        <FaReact size={100} color="white" />
+        <TbBrandNextjs size={100} color="white" />
+        <SiJavascript size={100} color="white" />
+        <SiHtml5 size={100} color="white" />
+        <SiCss3 size={100} color="white" />
+      </StyledBodyCenter>
     </StyledContentColumn>
   );
 }

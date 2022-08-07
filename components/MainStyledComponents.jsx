@@ -137,3 +137,60 @@ export const StyledBodyCenter = styled(motion.div)`
     @media (min-width: 2560px) {
     }
 }`;
+
+export const StyledSideBarItem = styled(motion.a)`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 12%;
+  cursor: pointer;
+  font-family: "Asher", sans-serif;
+  border: none;
+
+  :hover {
+    background-color: #fcec0c;
+  }
+
+  media (min-width: 768px) {
+  }
+  media (min-width: 1024px) {
+  }
+  media (min-width: 1280px) {
+  }
+  media (min-width: 1600px) {
+  }
+  media (min-width: 1920px) {
+  }
+  media (min-width: 2560px) {
+  }
+`;
+
+export const StyledCharacter = styled(motion.span)`
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 3rem;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+
+  media (min-width: 768px) {
+    font-size: 2rem;
+  }
+  media (min-width: 1024px) {
+  }
+  media (min-width: 1280px) {
+  }
+  media (min-width: 1600px) {
+  }
+  media (min-width: 1920px) {
+  }
+  media (min-width: 2560px) {
+  }
+`;

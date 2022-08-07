@@ -9,7 +9,6 @@ import { useState } from "react";
 
 import {
   Divider,
-  ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,

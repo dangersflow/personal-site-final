@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
 
-export const StyledContentColumn = styled.div`
+export const StyledContentColumn = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;

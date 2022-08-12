@@ -31,6 +31,7 @@ export default function HomeContent() {
       >
         FRANCISCO GONZALEZ
       </StyledHeader>
+      <div style={{ paddingBottom: "5rem" }} />
       <Row
         style={{
           width: "100%",
@@ -46,6 +47,8 @@ export default function HomeContent() {
             width: "50%",
             alignItems: "space-evenly",
             justifyContent: "space-evenly",
+
+            minWidth: "400px",
           }}
         >
           <StyledBodyLeftAlt
@@ -77,9 +80,11 @@ export default function HomeContent() {
             alignItems: "center",
             justifyContent: "center",
             width: "50%",
+            minWidth: "400px",
+            minHeight: "500px",
           }}
         >
-          <motion.div
+          {/* <motion.div
             style={{
               backgroundImage: `url(${ProfilePic.src})`,
               backgroundSize: "contain",
@@ -91,9 +96,24 @@ export default function HomeContent() {
             initial={{ y: "4rem", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
-          />
+          /> */}
+          <motion.div
+            style={{ width: "100%", height: "100%", position: "relative" }}
+            initial={{ y: "4rem", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            <Image
+              src={ProfilePic}
+              layout="fill"
+              objectFit={"contain"}
+              style={{ borderRadius: "50%" }}
+              alt={"Frank's Profile Picture"}
+            />
+          </motion.div>
         </Col>
       </Row>
+      <div style={{ paddingBottom: "5rem" }} />
       <StyledBodyCenter
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

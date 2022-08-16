@@ -31,26 +31,25 @@ export default function HomeContent() {
       >
         FRANCISCO GONZALEZ
       </StyledHeader>
-      <div style={{ paddingBottom: "5rem" }} />
       <Row
         style={{
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          height: "50rem",
           marginBottom: "10rem",
           flexWrap: "wrap",
         }}
       >
         <Col
           style={{
+            height: "100%",
             width: "50%",
             alignItems: "space-evenly",
             justifyContent: "space-evenly",
-
             minWidth: "400px",
           }}
         >
+          <div style={{ paddingBottom: "5rem" }} />
           <StyledBodyLeftAlt
             style={{ width: "100%" }}
             initial={{ y: "4rem", opacity: 0 }}
@@ -59,6 +58,7 @@ export default function HomeContent() {
           >
             {`👋 Hello. My name is Frank! \n`}
           </StyledBodyLeftAlt>
+          <div style={{ paddingBottom: "5rem" }} />
           <StyledBodyLeftAlt
             style={{ width: "100%" }}
             initial={{ y: "4rem", opacity: 0, animationDelay: "0.5s" }}
@@ -67,12 +67,14 @@ export default function HomeContent() {
           >
             {`🕸️ I'm a software engineer and a web developer. 🕸️  \n`}
           </StyledBodyLeftAlt>
+          <div style={{ paddingBottom: "5rem" }} />
           <StyledBodyLeftAlt
             style={{ width: "100%" }}
             initial={{ y: "4rem", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
           >{`Thanks for stopping by! \n`}</StyledBodyLeftAlt>
+          <div style={{ paddingBottom: "5rem" }} />
         </Col>
         <Col
           style={{
@@ -81,7 +83,7 @@ export default function HomeContent() {
             justifyContent: "center",
             width: "50%",
             minWidth: "400px",
-            minHeight: "500px",
+            minHeight: "600px",
           }}
         >
           {/* <motion.div
@@ -98,7 +100,11 @@ export default function HomeContent() {
             transition={{ delay: 0.5 }}
           /> */}
           <motion.div
-            style={{ width: "100%", height: "100%", position: "relative" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              position: "relative",
+            }}
             initial={{ y: "4rem", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -107,7 +113,6 @@ export default function HomeContent() {
               src={ProfilePic}
               layout="fill"
               objectFit={"contain"}
-              style={{ borderRadius: "50%" }}
               alt={"Frank's Profile Picture"}
             />
           </motion.div>
@@ -172,4 +177,9 @@ export default function HomeContent() {
 
 const StyledTechPadding = styled.div`
   padding-bottom: 2rem;
+`;
+
+const ImageWrapper = styled.div`
+  border: 1px solid white;
+  border-radius: 20px;
 `;

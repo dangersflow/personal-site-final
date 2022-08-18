@@ -15,22 +15,26 @@ export const StyledContentColumn = styled(motion.div)`
 
 export const StyledHeader = styled(motion.div)`
     font-size: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     font-family: "RNSReg", sans-serif;
     color: white;
     text-align: center;
 
     @media (max-width: 767px) {
       font-size: 3rem;
+      padding-bottom: 3rem;
     }
     @media (min-width: 768px) {
       font-size: 3rem;  
+      padding-bottom: 3rem;
     }
     @media (min-width: 1024px) {
       font-size: 3rem;
+      padding-bottom: 5rem;
     }
     @media (min-width: 1600px) {
       font-size: 4rem;
+      padding-bottom: 10rem;
     }
     @media (min-width: 2225px) {
       font-size: 5rem;

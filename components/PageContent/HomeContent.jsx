@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
 import { useState } from "react";
@@ -101,20 +102,19 @@ export default function HomeContent() {
           /> */}
           <motion.div
             style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               width: "100%",
               height: "100%",
-              position: "relative",
             }}
             initial={{ y: "4rem", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <Image
-              src={ProfilePic}
-              layout="fill"
-              objectFit={"contain"}
-              alt={"Frank's Profile Picture"}
-            />
+            <div style={{ borderRadius: "20px", overflow: "hidden" }}>
+              <StyledImage src={ProfilePic.src} alt="Frank's Profile" />
+            </div>
           </motion.div>
         </Col>
       </Row>
@@ -179,7 +179,38 @@ const StyledTechPadding = styled.div`
   padding-bottom: 2rem;
 `;
 
-const ImageWrapper = styled.div`
-  border: 1px solid white;
-  border-radius: 20px;
+const ImageWrapper = styled.span`
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > span {
+    box-sizing: content-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+`;
+
+const StyledImage = styled.img`
+  object-fit: contain;
+  height: 55rem;
+
+  @media (max-width: 767px) {
+    height: 40rem;
+  }
+  @media (min-width: 768px) {
+    height: 40rem;
+  }
+  @media (min-width: 1024px) {
+    height: 50rem;
+  }
+  @media (min-width: 1600px) {
+    height: 55rem;
+  }
+  @media (min-width: 1920px) {
+  }
+  @media (min-width: 2560px) {
+  }
 `;

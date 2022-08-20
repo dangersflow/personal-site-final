@@ -16,63 +16,45 @@ export default function AboutContent() {
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        ABOUT
+        ABOUT ME
       </StyledHeader>
       <StyledBodyLeft
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyRight
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyRight>
-      <StyledBodyLeft
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
+        {`👋 My name is Frank! I am a software engineer that graduated from the master's program of The University of Texas at Rio Grande Valley \n`}
       </StyledBodyLeft>
       <StyledBodyLeft
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
+        {`Though I am in the early stages of my career, I absolutely love front-end development and I am passionate about creating beautiful, functional, and user-friendly websites that are also showy at times. 😝 \n`}
       </StyledBodyLeft>
       <StyledBodyRight
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
+        {`Currently I am looking for a position in the field of web development/front-end engineering. I have a combined experience of about 2 years in the field of software engineering and web development. The details of projects I have done can be found under 
+        the projects tab.  \n`}
       </StyledBodyRight>
+      <StyledBodyLeft
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+      >
+        {`When I am not coding, I enjoy listening to music, collecting vinyl records, playing video games, watching anime, and spending time with my friends and family. \n`}
+      </StyledBodyLeft>
+      <StyledBodyRight
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+      >
+        {`If you would like to get in touch with me, please feel free to look at my contact information under the contact tab. I'm always open to scheduling chats! \n`}
+      </StyledBodyRight>
+      <StyledBodyCenter
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+      >
+        {`Thank you for reading! 😃 \n`}
+      </StyledBodyCenter>
     </StyledContentColumn>
   );
 }

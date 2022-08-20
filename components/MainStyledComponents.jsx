@@ -13,6 +13,18 @@ export const StyledContentColumn = styled(motion.div)`
     max-width: 150rem;
 }`;
 
+export const StyledContentColumnTimeline = styled(motion.div)`
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    z-index: 1;
+
+    max-width: 150rem;
+}`;
+
 export const StyledHeader = styled(motion.div)`
     font-size: 5rem;
     padding-bottom: 10rem;
@@ -40,6 +52,47 @@ export const StyledHeader = styled(motion.div)`
       font-size: 5rem;
     }
 }`;
+
+export const StyledTimelineBody = styled(motion.a)`
+  display: block;
+  font-size: 1.5rem;
+  font-family: "RNSLight", sans-serif;
+  color: white;
+  padding: 4rem;
+  background-color: rgba(76, 67, 70, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border-left: 3px solid yellow;
+  border-right: 3px solid yellow;
+  width: auto;
+  white-space: pre-line;
+`;
+
+export const StyledTimelineHeader = styled(motion.div)`
+  font-size: 2.5rem;
+  font-family: "RNSReg", sans-serif;
+  color: white;
+  padding-bottom: 2rem;
+`;
+
+export const StyledTimelineBodyText = styled(motion.div)`
+  font-size: 1.5rem;
+  font-family: "RNSReg", sans-serif;
+  color: white;
+  padding-bottom: 2rem;
+`;
+
+export const StyledTimelineChipRow = styled(motion.div)`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const StyledTimelineSubtitle = styled(motion.div)`
+  font-size: 1rem;
+  font-family: "RNSReg", sans-serif;
+  color: white;
+  padding-bottom: 2rem;
+`;
 
 export const StyledBodyRight = styled(motion.div)`
     font-size: 1.5rem;

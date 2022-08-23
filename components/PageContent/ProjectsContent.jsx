@@ -27,8 +27,11 @@ import { SiMaterialui } from "react-icons/si";
 import { SiDart } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { useMediaQuery } from "react-responsive";
 
 export default function ProjectsContent() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+
   return (
     <StyledContentColumnTimeline>
       <StyledHeader
@@ -37,7 +40,7 @@ export default function ProjectsContent() {
       >
         PROJECTS
       </StyledHeader>
-      <Timeline position="alternate">
+      <Timeline position={"alternate"}>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="secondary" />
@@ -57,7 +60,7 @@ export default function ProjectsContent() {
               <StyledTimelineBodyText>
                 {`This is a personal portfolio website that I built using React and Next.js. This is the site you're currently on!`}
               </StyledTimelineBodyText>
-              <StyledTimelineSubtitle>{`August 2022`}</StyledTimelineSubtitle>
+              <StyledTimelineSubtitle>{`May 2022 - August 2022`}</StyledTimelineSubtitle>
               <StyledTimelineChipRow>
                 <Chip
                   icon={<FaReact />}
@@ -197,6 +200,78 @@ export default function ProjectsContent() {
                   icon={<SiJavascript />}
                   label="JavaScript"
                   style={{ backgroundColor: "yellow", color: "black" }}
+                />
+              </StyledTimelineChipRow>
+            </StyledTimelineBody>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot color="secondary" />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <StyledTimelineBody
+              href="https://github.com/dangersflow/FindMeVending"
+              target="_blank"
+              initial={{ y: "4rem", opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              whileHover={{ y: -10, cursor: "pointer" }}
+            >
+              <StyledTimelineHeader>{`FindMeVending`}</StyledTimelineHeader>
+              <StyledTimelineBodyText>
+                {`College campuses are places were snacks are usually an absolute necessity and they are generally extremely prevalent through vending machine spread throughout. However, sometimes people want a specifc thing that might not be found in all vending machines, causing them to have to check multiple machines. The goal was to create a mobile application to crowdsource information to track utilities on a college campus such as vending machines, restrooms, and water fountains.`}
+              </StyledTimelineBodyText>
+              <StyledTimelineSubtitle>{`August 2020 - May 2021`}</StyledTimelineSubtitle>
+              <StyledTimelineChipRow>
+                <Chip
+                  icon={<SiDart />}
+                  label="Dart"
+                  style={{ backgroundColor: "lightblue", color: "black" }}
+                />
+                <Chip
+                  icon={<SiFlutter />}
+                  label="Flutter"
+                  style={{
+                    backgroundColor: "#007FFF",
+                    color: "white",
+                  }}
+                />
+              </StyledTimelineChipRow>
+            </StyledTimelineBody>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot color="primary" />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <StyledTimelineBody
+              href="https://github.com/dangersflow/Spektrogram"
+              target="_blank"
+              initial={{ y: "4rem", opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              whileHover={{ y: -10, cursor: "pointer" }}
+            >
+              <StyledTimelineHeader>{`Spektrogram`}</StyledTimelineHeader>
+              <StyledTimelineBodyText>
+                {`This is one of my first full passion projects. This tool allows you to pick an audio file from your phone, and analyze it in great detail. At the time, only a desktop version, titled Spek, was available; however, this project culminated in the creation of a mobile application, titled Spektrogram.`}
+              </StyledTimelineBodyText>
+              <StyledTimelineSubtitle>{`January 2019 - May 2019`}</StyledTimelineSubtitle>
+              <StyledTimelineChipRow>
+                <Chip
+                  icon={<SiDart />}
+                  label="Dart"
+                  style={{ backgroundColor: "lightblue", color: "black" }}
+                />
+                <Chip
+                  icon={<SiFlutter />}
+                  label="Flutter"
+                  style={{
+                    backgroundColor: "#007FFF",
+                    color: "white",
+                  }}
                 />
               </StyledTimelineChipRow>
             </StyledTimelineBody>

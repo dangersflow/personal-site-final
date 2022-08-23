@@ -23,6 +23,15 @@ export const StyledContentColumnTimeline = styled(motion.div)`
     z-index: 1;
 
     max-width: 150rem;
+
+    @media (max-width: 1024px) {
+        align-content: start;
+        padding: 1rem;
+    }
+    @media (max-width: 1440px) {
+      align-content: start;
+      padding: 2rem;
+  }
 }`;
 
 export const StyledHeader = styled(motion.div)`
@@ -66,6 +75,13 @@ export const StyledTimelineBody = styled(motion.a)`
   border-right: 3px solid yellow;
   width: auto;
   white-space: pre-line;
+
+  @media (max-width: 767px) {
+    padding: 1rem;
+  }
+  @media (max-width: 1024px) {
+    padding: 2rem;
+  }
 `;
 
 export const StyledTimelineHeader = styled(motion.div)`
@@ -73,6 +89,19 @@ export const StyledTimelineHeader = styled(motion.div)`
   font-family: "RNSReg", sans-serif;
   color: white;
   padding-bottom: 2rem;
+
+  @media (max-width: 767px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const StyledTimelineBodyText = styled(motion.div)`
@@ -80,11 +109,25 @@ export const StyledTimelineBodyText = styled(motion.div)`
   font-family: "RNSReg", sans-serif;
   color: white;
   padding-bottom: 2rem;
+
+  @media (max-width: 767px) {
+    font-size: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 0.5rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const StyledTimelineChipRow = styled(motion.div)`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const StyledTimelineSubtitle = styled(motion.div)`
@@ -92,6 +135,19 @@ export const StyledTimelineSubtitle = styled(motion.div)`
   font-family: "RNSReg", sans-serif;
   color: white;
   padding-bottom: 2rem;
+
+  @media (max-width: 767px) {
+    font-size: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 0.5rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 0.7rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const StyledBodyRight = styled(motion.div)`

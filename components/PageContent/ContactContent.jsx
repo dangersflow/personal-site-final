@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
 
@@ -12,6 +13,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import TechBubble from "../TechBubble";
 import { TbMail } from "react-icons/tb";
+import { TbPhone } from "react-icons/tb";
 
 export default function ContactContent() {
   return (
@@ -41,6 +43,11 @@ export default function ContactContent() {
           href={"mailto:pacog879@hotmail.com"}
           icon={<TbMail size={100} style={{ padding: "1rem" }} />}
           label={"pacog879@hotmail.com"}
+        />
+        <TechBubble
+          href={"tel:956-558-0130"}
+          icon={<TbPhone size={100} style={{ padding: "1rem" }} />}
+          label={"956-558-0130"}
         />
       </StyledContentColumn>
     </StyledContentColumn>

@@ -6,10 +6,13 @@ const StyledTechBubble = styled(motion.a)`
   display: flex;
   flex-direction: row;
   background-color: white;
+  font-weight: bold;
+  font-family: "RNSReg", sans-serif;
   border-radius: 50px;
   align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
+  color: black;
 `;
 
 const StyledTechBubbleLabel = styled(motion.div)`

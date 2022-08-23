@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import styled from "@emotion/styled";
 const { motion } = require("framer-motion");
@@ -8,6 +9,9 @@ import { SiJavascript, SiCss3, SiHtml5 } from "react-icons/si";
 import TechCard from "../TechCard";
 import ProfilePic from "../../public/me.jpg";
 import Image from "next/image";
+import UTRGV from "../../public/utrgv.png";
+import Zendesk from "../../public/zendesk.png";
+import NSIN from "../../public/nsin.png";
 
 import {
   StyledHeader,
@@ -16,6 +20,7 @@ import {
   StyledBodyCenter,
   StyledBodyLeftAlt,
 } from "../MainStyledComponents";
+import TechBubble from "../TechBubble";
 
 import Row from "../Row";
 import Col from "../Col";
@@ -170,6 +175,58 @@ export default function HomeContent() {
           <StyledTechPadding />
           {`CSS`}
         </TechCard>
+      </StyledBodyCenter>
+
+      <div style={{ paddingBottom: "15rem" }} />
+
+      <StyledBodyCenter
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        {`🔥Companies Worked At🔥  \n`}
+      </StyledBodyCenter>
+
+      <StyledBodyCenter
+        initial={{ y: "4rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        style={{
+          display: "flex",
+          width: "100%",
+          paddingTop: "5rem",
+          paddingBottom: "5rem",
+          alignItems: "center",
+          justifyContent: "space-evenly",
+          flexWrap: "wrap",
+          position: "relative",
+        }}
+        transition={{ delay: 0.7 }}
+      >
+        <TechBubble
+          href={"https://www.utrgv.edu/"}
+          icon={
+            <img src={UTRGV.src} height={120} style={{ padding: "1rem" }} />
+          }
+          label={"University of Texas at Rio Grande Valley"}
+        />
+        <TechBubble
+          href={"https://www.nsin.mil/"}
+          icon={
+            <img
+              src={NSIN.src}
+              height={120}
+              style={{ padding: "1rem 3rem 1rem 3rem" }}
+            />
+          }
+          label={"NSIN X-Force"}
+        />
+        <TechBubble
+          href={"https://www.zendesk.com/"}
+          icon={
+            <img src={Zendesk.src} height={120} style={{ padding: "1rem" }} />
+          }
+          label={"Zendesk"}
+        />
       </StyledBodyCenter>
     </StyledContentColumn>
   );

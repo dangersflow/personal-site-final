@@ -256,7 +256,7 @@ export default function ProjectsContent() {
             >
               <StyledTimelineHeader>{`Spektrogram`}</StyledTimelineHeader>
               <StyledTimelineBodyText>
-                {`This is one of my first full passion projects. This tool allows you to pick an audio file from your phone, and analyze it in great detail. At the time, only a desktop version, titled Spek, was available; however, this project culminated in the creation of a mobile application, titled Spektrogram.`}
+                {`This is one of my first full passion projects. This tool allows you to pick an audio file from your phone, and analyze it in great detail. At the time, only a desktop version, titled Spek, was available; as such, this project culminated in the creation of a mobile application, titled Spektrogram.`}
               </StyledTimelineBodyText>
               <StyledTimelineSubtitle>{`January 2019 - May 2019`}</StyledTimelineSubtitle>
               <StyledTimelineChipRow>

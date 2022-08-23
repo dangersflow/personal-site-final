@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
       ) : (
         <>
           <SideBar />
-          <Component {...pageProps} />
+          <Component />
         </>
       )}
     </>

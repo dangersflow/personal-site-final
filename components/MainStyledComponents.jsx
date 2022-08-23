@@ -339,3 +339,11 @@ export const StyledCharacter = styled(motion.span)`
   media (min-width: 2560px) {
   }
 `;
+
+export const TechBubble = styled(motion.a)`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: white;
+  border-radius: 50px;
+`;

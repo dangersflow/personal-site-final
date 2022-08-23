@@ -8,71 +8,41 @@ import {
   StyledContentColumn,
   StyledBodyCenter,
 } from "../MainStyledComponents";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import TechBubble from "../TechBubble";
+import { TbMail } from "react-icons/tb";
 
 export default function ContactContent() {
   return (
-    <StyledContentColumn>
+    <StyledContentColumn
+      style={{
+        height: "100vh",
+      }}
+    >
       <StyledHeader
         initial={{ y: "4rem", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
       >
         CONTACT
       </StyledHeader>
-      <StyledBodyLeft
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyRight
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyRight>
-      <StyledBodyLeft
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyLeft
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyLeft>
-      <StyledBodyRight
-        initial={{ y: "4rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-        nisi eu consectetur consectetur, nisl nisl consectetur nisl, euismod
-        consectetur nisl nisl euismod nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam euismod, nisi eu consectetur
-        consectetur, nisl nisl consectetur nisl, euismod consectetur nisl nisl
-        euismod nisl.
-      </StyledBodyRight>
+      <StyledContentColumn style={{ justifyContent: "center" }}>
+        <TechBubble
+          href={"https://www.linkedin.com/in/francisco-gonzalez-861333134/"}
+          icon={<FaLinkedin size={100} style={{ padding: "1rem" }} />}
+          label={"LinkedIn"}
+        />
+        <TechBubble
+          href={"https://github.com/dangersflow"}
+          icon={<FaGithub size={100} style={{ padding: "1rem" }} />}
+          label={"GitHub"}
+        />
+        <TechBubble
+          href={"mailto:pacog879@hotmail.com"}
+          icon={<TbMail size={100} style={{ padding: "1rem" }} />}
+          label={"pacog879@hotmail.com"}
+        />
+      </StyledContentColumn>
     </StyledContentColumn>
   );
 }

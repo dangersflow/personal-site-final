@@ -19,6 +19,7 @@ import {
   StyledContentColumn,
   StyledBodyCenter,
   StyledBodyLeftAlt,
+  DoubleColumnStyleCol,
 } from "../MainStyledComponents";
 import TechBubble from "../TechBubble";
 
@@ -46,13 +47,12 @@ export default function HomeContent() {
           flexWrap: "wrap",
         }}
       >
-        <Col
+        <DoubleColumnStyleCol
           style={{
             height: "100%",
-            width: "50%",
             alignItems: "space-evenly",
             justifyContent: "space-evenly",
-            minWidth: "400px",
+            minWidth: "200px",
           }}
         >
           <div style={{ paddingBottom: "5rem" }} />
@@ -81,15 +81,13 @@ export default function HomeContent() {
             transition={{ delay: 0.4 }}
           >{`Thanks for stopping by! \n`}</StyledBodyLeftAlt>
           <div style={{ paddingBottom: "5rem" }} />
-        </Col>
-        <Col
+        </DoubleColumnStyleCol>
+        <DoubleColumnStyleCol
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            width: "50%",
-            minWidth: "400px",
-            minHeight: "600px",
+            minWidth: "300px",
           }}
         >
           {/* <motion.div
@@ -121,7 +119,7 @@ export default function HomeContent() {
               <StyledImage src={ProfilePic.src} alt="Frank's Profile" />
             </div>
           </motion.div>
-        </Col>
+        </DoubleColumnStyleCol>
       </Row>
       <div style={{ paddingBottom: "5rem" }} />
       <StyledBodyCenter
@@ -137,8 +135,6 @@ export default function HomeContent() {
         style={{
           display: "flex",
           width: "100%",
-          paddingTop: "5rem",
-          paddingBottom: "5rem",
           alignItems: "center",
           justifyContent: "space-evenly",
           flexWrap: "wrap",

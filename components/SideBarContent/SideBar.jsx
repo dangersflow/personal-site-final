@@ -9,5 +9,9 @@ export default function SideBar() {
   const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
-  return isTabletOrMobile ? <MainSideBarMobile /> : <MainSideBarDesktop />;
+  return (
+    <header>
+      {isTabletOrMobile ? <MainSideBarMobile /> : <MainSideBarDesktop />}
+    </header>
+  );
 }

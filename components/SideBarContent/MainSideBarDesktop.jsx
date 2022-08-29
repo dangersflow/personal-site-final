@@ -40,14 +40,16 @@ const StyledSideBar = styled(Col)`
 
 export default function MainSideBarDesktop() {
   return (
-    <StyledSideBar>
-      <SideBarHome />
-      <SideBarDivider />
-      <SideBarAbout />
-      <SideBarDivider />
-      <SideBarProjects />
-      <SideBarDivider />
-      <SideBarContact />
-    </StyledSideBar>
+    <>
+      <StyledSideBar>
+        <SideBarHome />
+        <SideBarDivider />
+        <SideBarAbout />
+        <SideBarDivider />
+        <SideBarProjects />
+        <SideBarDivider />
+        <SideBarContact />
+      </StyledSideBar>
+    </>
   );
 }

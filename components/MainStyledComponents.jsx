@@ -11,6 +11,13 @@ export const StyledContentColumn = styled(motion.div)`
     z-index: 1;
 
     max-width: 150rem;
+
+    @media(min-width: 0px) {
+      padding: 3rem;
+    }
+    @media(min-width: 768px) {
+      padding: 5rem;
+    }
 }`;
 
 export const StyledContentColumnTimeline = styled(motion.div)`
@@ -41,7 +48,15 @@ export const StyledHeader = styled(motion.div)`
     color: white;
     text-align: center;
 
-    @media (max-width: 767px) {
+    @media (min-width: 0px) {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    @media (min-width: 400px){
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    @media (min-width: 767px) {
       font-size: 3rem;
       padding-bottom: 3rem;
     }
@@ -162,10 +177,19 @@ export const StyledBodyRight = styled(motion.div)`
     border-radius: 10px;
     border-right: 3px solid yellow;
 
-    @media (min-width: 767px) {
-      padding-bottom: 3rem;
+    @media (min-width: 0px) {
       font-size: 1rem;
-      margin-left: 0rem;
+      padding: 2rem;
+      margin-right: 0rem;
+    }
+    @media (min-width: 400px) {
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
+    @media (min-width: 767px) {
+      padding: 4rem;
+      font-size: 1.5rem;
+      margin-left: 50%;
     }
     @media (min-width: 768px) {
       padding: 4rem;
@@ -197,11 +221,19 @@ export const StyledBodyLeft = styled(motion.div)`
     border-radius: 10px;
     border-left: 3px solid yellow;
 
-    @media (max-width: 767px) {
-      padding: 4rem;
-      padding-bottom: 3rem;
-      font-size: 1.5rem;
+    @media (min-width: 0px) {
+      font-size: 1rem;
+      padding: 2rem;
       margin-right: 0rem;
+    }
+    @media (min-width: 400px) {
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
+    @media (min-width: 767px) {
+      padding: 4rem;
+      font-size: 1.5rem;
+      margin-right: 50%;
     }
     @media (min-width: 768px) {
       font-size: 1.5rem;
@@ -219,19 +251,26 @@ export const StyledBodyLeft = styled(motion.div)`
 }`;
 
 export const StyledBodyLeftAlt = styled(motion.div)`
-    font-size: 2rem;
-    font-family: "RNSLight", sans-serif;
-    color: white;
-    padding: 4rem;
-    position: relative;
-    background-color: rgba(76, 67, 70, .25);  
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    border-left: 3px solid yellow;
+  font-size: 2rem;
+  font-family: "RNSLight", sans-serif;
+  color: white;
+  padding: 4rem;
+  position: relative;
+  background-color: rgba(76, 67, 70, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border-left: 3px solid yellow;
 
-    @media (max-width: 767px) {
+  @media (min-width: 0px) {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  @media (min-width: 400px) {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+    @media (min-width: 767px) {
       padding: 4rem;
-      padding-bottom: 3rem;
       font-size: 1.5rem;
       margin-right: 0rem;
     }
@@ -248,7 +287,8 @@ export const StyledBodyLeftAlt = styled(motion.div)`
     }
     @media (min-width: 2560px) {
     }
-}`;
+  }
+`;
 
 export const StyledBodyCenter = styled(motion.div)`
     font-size: 2rem;
@@ -263,7 +303,15 @@ export const StyledBodyCenter = styled(motion.div)`
     border-left: 3px solid yellow;
     border-right: 3px solid yellow;
 
-    @media (max-width: 767px) {
+    @media (min-width: 0px) {
+      font-size: 1rem;
+      padding: 2rem;
+    }
+    @media (min-width: 400px) {
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
+    @media (min-width: 767px) {
       padding: 4rem;
       padding-bottom: 3rem;
       font-size: 1.5rem;
@@ -346,4 +394,17 @@ export const TechBubble = styled(motion.a)`
   position: relative;
   background-color: white;
   border-radius: 50px;
+`;
+
+export const DoubleColumnStyleCol = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  width: 50%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
 `;

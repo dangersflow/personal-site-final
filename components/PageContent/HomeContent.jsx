@@ -139,6 +139,8 @@ export default function HomeContent() {
           justifyContent: "space-evenly",
           flexWrap: "wrap",
           position: "relative",
+          paddingTop: "5rem",
+          paddingBottom: "5rem",
         }}
         transition={{ delay: 0.6 }}
       >

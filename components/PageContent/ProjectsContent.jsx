@@ -30,7 +30,8 @@ import { SiJavascript } from "react-icons/si";
 import { useMediaQuery } from "react-responsive";
 
 export default function ProjectsContent() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 799px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 800px)" });
 
   return (
     <StyledContentColumnTimeline>
@@ -40,7 +41,7 @@ export default function ProjectsContent() {
       >
         PROJECTS
       </StyledHeader>
-      <Timeline position={"alternate"}>
+      <Timeline position={isMobile ? "left" : "alternate"}>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="secondary" />

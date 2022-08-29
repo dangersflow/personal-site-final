@@ -14,6 +14,7 @@ export const StyledContentColumn = styled(motion.div)`
 
     @media(min-width: 0px) {
       padding: 3rem;
+      padding-top: 5rem;
     }
     @media(min-width: 768px) {
       padding: 5rem;
@@ -31,11 +32,16 @@ export const StyledContentColumnTimeline = styled(motion.div)`
 
     max-width: 150rem;
 
-    @media (max-width: 1024px) {
-        align-content: start;
-        padding: 1rem;
+    @media (min-width: 0px) {
+      padding: 0rem;
+      padding-top: 5rem;
+      align-content: start;
     }
-    @media (max-width: 1440px) {
+    @media (min-width: 1024px) {
+      align-content: start;
+      padding: 1rem;
+    }
+    @media (min-width: 1440px) {
       align-content: start;
       padding: 2rem;
   }
@@ -91,11 +97,19 @@ export const StyledTimelineBody = styled(motion.a)`
   width: auto;
   white-space: pre-line;
 
-  @media (max-width: 767px) {
+  @media (min-width: 0px) {
     padding: 1rem;
+    min-width: 13rem;
   }
-  @media (max-width: 1024px) {
+  @media (min-width: 400px) {
+    padding: 1rem;
+    min-width: 20rem;
+  }
+  @media (min-width: 767px) {
     padding: 2rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 4rem;
   }
 `;
 
@@ -105,14 +119,14 @@ export const StyledTimelineHeader = styled(motion.div)`
   color: white;
   padding-bottom: 2rem;
 
-  @media (max-width: 767px) {
-    font-size: 1rem;
+  @media (min-width: 0px) {
+    font-size: 1.5rem;
   }
-  @media (min-width: 768px) {
-    font-size: 1rem;
+  @media (min-width: 767px) {
+    font-size: 1.8rem;
   }
   @media (min-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   @media (min-width: 1600px) {
     font-size: 2.5rem;
@@ -125,14 +139,14 @@ export const StyledTimelineBodyText = styled(motion.div)`
   color: white;
   padding-bottom: 2rem;
 
-  @media (max-width: 767px) {
-    font-size: 0.5rem;
+  @media (min-width: 0px) {
+    font-size: 1rem;
   }
-  @media (min-width: 768px) {
-    font-size: 0.5rem;
+  @media (min-width: 767px) {
+    font-size: 1.5rem;
   }
   @media (min-width: 1024px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   @media (min-width: 1600px) {
     font-size: 1.5rem;
@@ -151,14 +165,14 @@ export const StyledTimelineSubtitle = styled(motion.div)`
   color: white;
   padding-bottom: 2rem;
 
-  @media (max-width: 767px) {
-    font-size: 0.5rem;
+  @media (min-width: 0px) {
+    font-size: 0.7rem;
   }
-  @media (min-width: 768px) {
-    font-size: 0.5rem;
+  @media (min-width: 767px) {
+    font-size: 0.9rem;
   }
   @media (min-width: 1024px) {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   @media (min-width: 1600px) {
     font-size: 1rem;

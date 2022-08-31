@@ -327,7 +327,6 @@ export const StyledBodyCenter = styled(motion.div)`
     }
     @media (min-width: 767px) {
       padding: 4rem;
-      padding-bottom: 3rem;
       font-size: 1.5rem;
     }
     @media (min-width: 768px) {

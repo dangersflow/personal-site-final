@@ -205,7 +205,7 @@ export default function HomeContent() {
           icon={
             <img src={UTRGV.src} height={120} style={{ padding: "1rem" }} />
           }
-          label={"University of Texas at Rio Grande Valley"}
+          label={"UT at Rio Grande Valley"}
         />
         <TechBubble
           href={"https://www.nsin.mil/"}

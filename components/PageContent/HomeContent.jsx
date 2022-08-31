@@ -127,7 +127,7 @@ export default function HomeContent() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        {`🔥My Tech Stack🔥  \n`}
+        {`Tech Stack\n`}
       </StyledBodyCenter>
       <StyledBodyCenter
         initial={{ y: "4rem", opacity: 0 }}
@@ -182,7 +182,7 @@ export default function HomeContent() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        {`🔥Companies Worked At🔥  \n`}
+        {`Companies Worked At  \n`}
       </StyledBodyCenter>
 
       <StyledBodyCenter

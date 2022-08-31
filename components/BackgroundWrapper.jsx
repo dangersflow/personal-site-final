@@ -1,9 +1,9 @@
 import react from "react";
 import styled from "@emotion/styled";
 
-const { motion } = require("framer-motion");
+const { motion, AnimatePresence } = require("framer-motion");
 
-const StyledBackgroundWrapper = styled.div`
+const StyledBackgroundWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,8 +37,14 @@ const StyledBackgroundWrapper = styled.div`
 export default function BackgroundWrapper(props) {
   console.log(props.bg + " is the background image");
   return (
-    <StyledBackgroundWrapper bg={props.bg}>
-      {props.children}
-    </StyledBackgroundWrapper>
+    <AnimatePresence>
+      <StyledBackgroundWrapper
+        bg={props.bg}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        {props.children}
+      </StyledBackgroundWrapper>
+    </AnimatePresence>
   );
 }

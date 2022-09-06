@@ -10,24 +10,27 @@ import useSetSessionStorage from "../components/SetSessionStorage";
 function MyApp({ Component, pageProps }) {
   const [temp, setTemp] = useState(true);
 
-  const showIntro = useSessionStorage("showIntro");
-
   useEffect(() => {
-    if (showIntro === "true") {
-      console.log("setting sessionStorage");
-      sessionStorage.setItem("showIntro", temp.toString());
+    if (sessionStorage.getItem("showIntro") === "true") {
+      setTemp(true);
+    } else if (sessionStorage.getItem("showIntro") === "false") {
+      setTemp(false);
+    } else {
+      sessionStorage.setItem("showIntro", "true");
+      setTemp(true);
     }
   }, [temp]);
 
   const handleChange = (state) => {
     setTemp(state);
+    sessionStorage.setItem("showIntro", state);
   };
 
-  console.log("bruh: ", showIntro);
+  console.log("bruh: ", temp);
 
   return (
     <>
-      {showIntro === "true" && temp ? (
+      {temp === true ? (
         <Col
           style={{
             height: "100vh",

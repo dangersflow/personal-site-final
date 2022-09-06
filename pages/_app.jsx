@@ -8,7 +8,13 @@ import useSessionStorage from "../components/UseSessionStorage";
 import useSetSessionStorage from "../components/SetSessionStorage";
 
 function MyApp({ Component, pageProps }) {
-  const [temp, setTemp] = useState(true);
+  const [temp, setTemp] = useState(
+    typeof window !== "undefined"
+      ? sessionStorage.getItem("showIntro") === "false"
+        ? false
+        : true
+      : true
+  );
 
   useEffect(() => {
     if (sessionStorage.getItem("showIntro") === "true") {
